@@ -2,7 +2,7 @@
 
 > Example Angular 1.5+ (ES6 + Components) codebase that adheres to the Exelero specs and API.
 
-# Getting started
+## Getting started
 
 1. Clone repo
 2. `npm install`
