@@ -1,0 +1,29 @@
+<div class="home-page">
+
+  <!-- Splash banner that only shows when not logged in -->
+  <div class="banner" show-authed="false">
+    <div class="container">
+      <h1 class="logo-font" ng-bind="::$ctrl.appName"></h1>
+    </div>
+  </div>
+
+  <div class="container page">
+    <div class="row">
+
+
+      <!-- Main view - contains tabs & article list -->
+      <div class="col-md-6 offset-md-3 col-xs-12">
+        <h3 class="text-xs-center" style="color: limegreen;">Welcome to your Audio Catalog</h3><br />
+        <h5 class="text-xs-center">For all your audio clips</h5>
+
+        <div class="text-xs-center" style="margin-top: 40px">
+          <a ui-sref-active="active" ui-sref="app.login">
+            <h3><u>Sign In</u></h3> or Create account
+          </a>
+        </div>
+      </div>
+      <!-- End the row & container divs -->
+    </div>
+  </div>
+
+</div>

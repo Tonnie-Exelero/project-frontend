@@ -1,0 +1,39 @@
+<div class="students-page">
+  <div class="container page">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="dashboard-type">Students</h2>
+      </div>
+
+      <div class="col-md-6 right-links text-sm-right">
+        <p class="past-reviews">
+          <a href="" ui-sref="app.instructor_home">Dashboard</a>
+        </p>
+        <p class="upgrade-text">
+          <a ui-sref="app.finished_reviews">Finished reviews</a>
+        </p>
+      </div>
+    </div>
+
+    <hr size="1" color="lightgrey">
+
+    <div class="row review-row">
+      <!-- Main view - contains video uploads views -->
+      <table width="100%" class="text-sm-center">
+        <thead class="table-head">
+        <tr>
+          <th class="text-sm-center">Student</th>
+          <th class="text-sm-center">Date signed up</th>
+        </tr>
+        </thead>
+        <tbody class="table-body" ng-repeat="student in $ctrl.students">
+        <tr>
+          <td><a ui-sref="app.past_reviews({username: student.username})">{{student.fullName}}</a></td>
+          <td>{{student.createdAt | date:'dd-MM-yyyy'}}</td>
+        </tr>
+        </tbody>
+      </table>
+      <!-- End the row & container divs -->
+    </div>
+  </div>
+</div>

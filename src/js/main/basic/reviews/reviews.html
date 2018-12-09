@@ -1,0 +1,98 @@
+<div class="basic-reviews-page">
+  <div class="container page">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="dashboard-type">Reviews</h2>
+      </div>
+
+      <div class="col-md-6 right-links text-sm-right">
+        <p class="past-reviews">
+          <a href="" ui-sref="app.basic_home">Dashboard</a>
+        </p>
+        <p class="upgrade-text">
+          <a href="">Upgrade to Unlimited Reviews</a>
+        </p>
+      </div>
+    </div>
+
+    <hr size="1" color="lightgrey">
+
+
+    <div class="row review-row">
+      <!-- Main view - contains video uploads views -->
+      <div class="col-md-12">
+        <table width="100%">
+          <thead class="table-head">
+          <tr>
+            <th class="text-sm-center"></th>
+            <th></th>
+            <th class="text-sm-center"></th>
+          </tr>
+          </thead>
+          <tbody class="table-body" ng-repeat="video in $ctrl.reviews" ng-if="video.video2">
+          <tr style="margin-bottom: 30px">
+            <td width="50%" style="margin-right: 20%">
+              <div class="video-gallery">
+                <div class="video-date">{{video.createdAt | date:'dd-MM-yyyy - HH:mm:ss'}}  <span ng-if="video.reviewChecked === false" style="color: orangered">New review</span></div>
+                <div class="single-video">
+                  <div class="the-video">
+                    <video id="myvideos" width="270" height="130" controls autoplay>
+                      <!--<source class="active" src="http://35.229.26.45:4000/backend/uploads/{{video.video[0]}}">
+                      <source src="http://35.229.26.45:4000/backend/uploads/{{video.video[1]}}">-->
+                      <source src="http://35.229.26.45:4000/backend/uploads/{{video.video2[0]}}" type="video/mp4">
+                      <source src="http://35.229.26.45:4000/backend/uploads/{{video.video2[0]}}" type="video/ogg">
+                      <source src="http://35.229.26.45:4000/backend/uploads/{{video.video2[0]}}" type="video/mov">
+                      <source src="http://35.229.26.45:4000/backend/uploads/{{video.video2[0]}}" type="video/wmv">
+                      <source src="http://35.229.26.45:4000/backend/uploads/{{video.video2[0]}}" type="video/flv">
+                      <source src="http://35.229.26.45:4000/backend/uploads/{{video.video2[0]}}" type="video/avi">
+                      <source src="http://35.229.26.45:4000/backend/uploads/{{video.video2[0]}}" type="video/mpeg-4">
+                      <source src="http://35.229.26.45:4000/backend/uploads/{{video.video2[0]}}" type="video/webm">
+                      <source src="http://35.229.26.45:4000/backend/uploads/{{video.video2[0]}}" type="video/mkv">
+                      <source src="http://35.229.26.45:4000/backend/uploads/{{video.video2[0]}}" type="video/vob">
+                      <source src="http://35.229.26.45:4000/backend/uploads/{{video.video2[0]}}" type="video/ogv">
+                      <source src="http://35.229.26.45:4000/backend/uploads/{{video.video2[0]}}" type="video/yuv">
+                      <source src="http://35.229.26.45:4000/backend/uploads/{{video.video2[0]}}" type="video/asf">
+                      <source src="http://35.229.26.45:4000/backend/uploads/{{video.video2[0]}}" type="video/amv">
+                      Your browser does not support the video tag.
+                    </video>
+                    <!--<div class="video-image">
+                      <p class="video-num-content">
+                        <span class="video-number">{{video.video.length}}</span> video(s)
+                      </p>
+                    </div>-->
+                    <div>
+                      <a href="" ng-if="video.video" ng-click="$ctrl.downloadFile(video.video)">Download all videos</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td width="50%" style="margin-right: 20%">
+              <div class="notes-title">
+                <br /><br />
+
+                <button class="btn btn-danger" ng-if="video.video2" ng-click="$ctrl.downloadReview(video.video2)">Download review</button>
+
+                <br />
+
+                Notes <a href=""><span ng-if="video.reviewChecked === false" class="blinking-text" style="font-size: 15px;" ng-click="$ctrl.markRead(video)">Mark as read</span></a>
+              </div>
+
+              <div class="video-notes">
+                <p style="color: red">{{video.notes2}}</p>
+                <p>{{video.notes}}</p>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+          <tbody class="table-body" ng-repeat="video in $ctrl.reviews" ng-if="!video.video2">
+          <tr>
+            <td align="center" style="font-size: 24px">No reviews yet!</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- End the row & container divs -->
+    </div>
+  </div>
+</div>

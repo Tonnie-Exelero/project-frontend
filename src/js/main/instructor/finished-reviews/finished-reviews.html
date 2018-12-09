@@ -1,0 +1,41 @@
+<div class="finished-reviews-page">
+  <div class="container page">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="dashboard-type">Finished Reviews</h2>
+      </div>
+
+      <div class="col-md-6 right-links text-sm-right">
+        <p class="past-reviews">
+          <a ui-sref="app.instructor_students">Students</a>
+        </p>
+      </div>
+    </div>
+
+    <hr size="1" color="lightgrey">
+
+
+    <div class="row review-row">
+      <!-- Main view - contains video uploads views -->
+      <table width="100%" class="text-sm-center">
+        <thead class="table-head">
+        <tr>
+          <th class="text-sm-center">Reviews to do:</th>
+          <th class="text-sm-center">Finished on:</th>
+          <th class="text-sm-center"></th>
+          <th class="text-sm-center">Completed by:</th>
+        </tr>
+        </thead>
+        <tbody class="table-body" ng-repeat="review in $ctrl.reviews">
+        <tr style="margin-bottom: 15px !important;">
+          <td><a ui-sref="app.instructor_dashboard({slug: review.slug})">{{review.author.fullName}}</a></td>
+          <td>{{review.createdAt | date:'dd-MM-yyyy - HH:mm:ss'}}</td>
+          <td><a href="" ng-click="$ctrl.downloadFile(review.video2)">Download</a></td>
+          <td>{{review.reviewedBy}}</td>
+        </tr>
+        </tbody>
+      </table>
+      <!-- End the row & container divs -->
+    </div>
+  </div>
+</div>

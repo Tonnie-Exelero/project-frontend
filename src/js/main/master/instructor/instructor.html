@@ -1,0 +1,88 @@
+<div class="master-archive-page">
+  <div class="container page">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="dashboard-type">Master Archive</h2>
+      </div>
+
+      <div class="col-md-6 right-links text-sm-right">
+        <p class="past-reviews">
+          <a href="" ui-sref="app.master_home">Dashboard</a>
+        </p>
+        <p class="upgrade-text">
+          <a ui-sref="app.master_dashboard">Instructor reports</a>
+        </p>
+        <p class="upgrade-text">
+          <a ui-sref="app.master_archive">Archive</a>
+        </p>
+      </div>
+    </div>
+
+    <hr size="1" color="lightgrey">
+
+
+    <div class="row review-row">
+      <!-- Main view - contains video uploads views -->
+      <div class="col-md-5">
+        <div class="reports">
+          <div class="reports-title">{{$ctrl.instructor.fullName}}'s archive</div>
+          <div class="reports-title">This month:
+            <span class="reports-date">{{$ctrl.month}} {{$ctrl.firstDay | date: 'dd'}} - {{$ctrl.month}} {{$ctrl.lastDay | date: 'dd'}}</span>
+          </div>
+          <div class="reports-details">
+            <div class="">
+              Total submissions completed: {{$ctrl.completedCount || 0}}
+            </div>
+          </div>
+
+          <br /><br />
+
+          <div class="reports-title" id="report-month">
+            This year:
+          </div>
+          <div class="reports-details" id="report-month1">
+            <div class="">
+              Total submissions completed: {{$ctrl.completedCount || 0}}
+            </div>
+          </div>
+
+          <br /><br />
+
+          <div class="reports-title">
+            Instructors:
+          </div>
+          <div class="reports-details" ng-repeat="instructor in $ctrl.instructors">
+            <div class="">
+              <a ui-sref="app.master_instructor({name: instructor.username})">{{instructor.fullName}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4"></div>
+
+      <div class="col-md-3">
+        <div class="reports-title">
+          {{$ctrl.instructor.fullName}} {{$ctrl.year}}
+        </div>
+        <div class="reports-details">
+          <div class="">
+            <p><button class="btn primary-btn" ng-click="$ctrl.filterMonth(0)">January</button></p>
+            <p><button class="btn primary-btn" ng-click="$ctrl.filterMonth(1)">February</button></p>
+            <p><button class="btn primary-btn" ng-click="$ctrl.filterMonth(2)">March</button></p>
+            <p><button class="btn primary-btn" ng-click="$ctrl.filterMonth(3)">April</button></p>
+            <p><button class="btn primary-btn" ng-click="$ctrl.filterMonth(4)">May</button></p>
+            <p><button class="btn primary-btn" ng-click="$ctrl.filterMonth(5)">June</button></p>
+            <p><button class="btn primary-btn" ng-click="$ctrl.filterMonth(6)">July</button></p>
+            <p><button class="btn primary-btn" ng-click="$ctrl.filterMonth(7)">August</button></p>
+            <p><button class="btn primary-btn" ng-click="$ctrl.filterMonth(8)">September</button></p>
+            <p><button class="btn primary-btn" ng-click="$ctrl.filterMonth(9)">October</button></p>
+            <p><button class="btn primary-btn" ng-click="$ctrl.filterMonth(10)">November</button></p>
+            <p><button class="btn primary-btn" ng-click="$ctrl.filterMonth(11)">December</button></p>
+          </div>
+        </div>
+      </div>
+      <!-- End the row & container divs -->
+    </div>
+  </div>
+</div>

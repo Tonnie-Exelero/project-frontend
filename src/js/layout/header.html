@@ -1,0 +1,67 @@
+<nav class="navbar navbar-light">
+  <div class="container">
+
+    <a class="navbar-brand"
+      ui-sref="app.basic_home"
+       ng-show="$ctrl.currentUser.role === 'Basic_User'"
+      ng-bind="::$ctrl.appName">
+    </a>
+
+    <a class="navbar-brand"
+       ng-show="!$ctrl.currentUser.role"
+       ng-bind="::$ctrl.appName">
+    </a>
+
+    <!-- Show this for logged out users -->
+    <ul show-authed="false"
+      class="nav navbar-nav pull-xs-right">
+
+      <li class="nav-item">
+        <a class="nav-link"
+          ui-sref-active="active"
+          ui-sref="app.login">
+          Sign in
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link"
+          ui-sref-active="active"
+          ui-sref="app.register">
+          Sign up
+        </a>
+      </li>
+
+    </ul>
+
+    <!-- Show this for logged in users -->
+    <ul show-authed="true"
+      class="nav navbar-nav pull-xs-right">
+
+      <li class="nav-item">
+        <a class="nav-link"
+          ui-sref-active="active"
+          ui-sref="app.settings">
+          <i class="ion-gear-a"></i>&nbsp;Settings
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link"
+          ui-sref-active="active"
+          ui-sref="app.profile.main({ username: $ctrl.currentUser.username})">
+          <img src="images/profile.png" class="user-pic" />
+          {{ $ctrl.currentUser.username }}
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <button class="nav-link btn btn-outline-danger"
+                ng-click="$ctrl.logout()">
+          Logout.
+        </button>
+      </li>
+
+    </ul>
+  </div>
+</nav>

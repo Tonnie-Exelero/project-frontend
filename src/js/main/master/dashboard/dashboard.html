@@ -1,0 +1,55 @@
+<div class="master-dashboard-page">
+  <div class="container page">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="dashboard-type">Dashboard</h2>
+      </div>
+
+      <div class="col-md-6 right-links text-sm-right">
+        <p class="past-reviews">
+          <a href="" ui-sref="app.master_home">Dashboard</a>
+        </p>
+        <p class="upgrade-text">
+          <a ui-sref="app.master_archive">Archive</a>
+        </p>
+      </div>
+    </div>
+
+    <hr size="1" color="lightgrey">
+
+    <div class="row">
+      <!-- Main view - contains video uploads views -->
+      <div class="col-md-5">
+        <div class="reports">
+          <div class="reports-title">Basic reviews monthly report
+            <span class="reports-date"></span>
+          </div>
+          <div class="reports-details">
+            <div class="">
+              Total submissions this month: {{$ctrl.reviewsCount || "0"}}
+            </div>
+            <div class="">
+              Total submissions completed: {{$ctrl.completedCount || 0}}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-2"></div>
+
+      <!--<div class="col-md-5">
+        <div class="reports">
+          <div class="reports-title">
+            Instructors reviews completed
+          </div>
+          <div class="reports-details" ng-repeat="instructor in $ctrl.instructors">
+            <div class="" ng-repeat="count in $ctrl.completedCount">
+              {{instructor.username || "Err"}}:  {{count.completedCount || 0}}
+            </div>
+          </div>
+        </div>
+      </div>-->
+      <!-- End the row & container divs -->
+    </div>
+  </div>
+</div>

@@ -1,0 +1,68 @@
+<div class="past-reviews-page">
+  <div class="container page">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>{{$ctrl.reviews[0].author.fullName}}</h2>
+        <h3 class="dashboard-type">{{$ctrl.reviews[0].author.email}}</h3>
+      </div>
+
+      <div class="col-md-6 right-links text-sm-right">
+        <p class="past-reviews">
+          <a href="" ui-sref="app.instructor_home">Dashboard</a>
+        </p>
+        <p class="upgrade-text">
+          <a ui-sref="app.pending_reviews">Pending reviews</a>
+        </p>
+        <p class="upgrade-text">
+          <a ui-sref="app.finished_reviews">Finished reviews</a>
+        </p>
+      </div>
+    </div>
+
+    <hr size="1" color="lightgrey">
+
+
+    <div class="row review-row">
+      <!-- Main view - contains video uploads views -->
+      <div class="col-md-12">
+        <table width="100%">
+          <thead class="table-head">
+          <tr>
+            <th class="text-sm-center"></th>
+            <th></th>
+            <th class="text-sm-center"></th>
+          </tr>
+          </thead>
+          <tbody class="table-body" ng-repeat="video in $ctrl.reviews">
+          <tr>
+            <td width="50%" style="margin-right: 20%">
+              <div class="video-gallery">
+                <div class="video-date">{{video.createdAt | date:'dd-MM-yyyy - HH:mm:ss'}}</div>
+                <div class="single-video">
+                  <div class="the-video">
+                    <div class="video-image">
+                      <p class="video-num-content">
+                        <span class="video-number">{{video.video.length}}</span> video(s)
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td width="50%" style="margin-right: 20%">
+              <div class="notes-title">
+                Notes
+              </div>
+
+              <div class="video-notes">
+                {{video.notes}}
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- End the row & container divs -->
+    </div>
+  </div>
+</div>
