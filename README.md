@@ -1,8 +1,6 @@
-# ![Angular 1.5+ ES6 & Component API Example App](project-logo.png)
+# Audio Catalog Web App
 
-> Example Angular 1.5+ (ES6 + Components) codebase that adheres to the [RealWorld](https://github.com/gothinkster/realworld-example-apps) spec and API.
-
-View the **[demo application](https://angularjs.realworld.io)** or **[learn how to build the application from scratch](https://thinkster.io/angularjs-es6-tutorial)**!
+> Example Angular 1.5+ (ES6 + Components) codebase that adheres to the Exelero specs and API.
 
 # Getting started
 
@@ -22,4 +20,4 @@ If you want to change the API URL to a local server, simply edit `src/js/config/
 
 <br />
 
-[![Brought to you by Thinkster](https://raw.githubusercontent.com/gothinkster/realworld/master/media/end.png)](https://thinkster.io)
+[![Brought to you by Exelero](https://raw.githubusercontent.com/gothinkster/realworld/master/media/end.png)](http://tonnieexelero.com)
