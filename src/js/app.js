@@ -20,12 +20,6 @@ import './main/master/dashboard';
 import './main/master/archive';
 import './main/master/instructor';
 import './main/master/edit';
-import './main/instructor/dashboard';
-import './main/instructor/finished-reviews';
-import './main/instructor/home';
-import './main/instructor/past-reviews';
-import './main/instructor/pending-reviews';
-import './main/instructor/students';
 import './main/profile';
 import './main/article';
 import './services';
@@ -49,12 +43,6 @@ const requires = [
     'app.master_archive',
     'app.master_instructor',
     'app.master_edit',
-    'app.instructor_dashboard',
-    'app.instructor_finished_reviews',
-    'app.instructor_home',
-    'app.past_reviews',
-    'app.pending_reviews',
-    'app.instructor_students',
     'app.profile',
     'app.services',
     'app.auth',

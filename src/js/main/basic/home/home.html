@@ -2,21 +2,21 @@
   <div class="container page">
     <div class="row">
       <div class="col-md-6">
-        <h2 class="dashboard-type">Basic Dashboard</h2>
+        <h2 class="dashboard-type">Upload Audio Clips</h2>
       </div>
 
       <div class="col-md-6 right-links">
-        <div>
-          <span class="new-review" ng-if="$ctrl.newReview === true">
-            <a href="" ui-sref="app.basic_reviews">New review!  </a>
-          </span>
-          <span class="past-reviews">
-            <a href="" ui-sref="app.basic_reviews">Past reviews</a>
-          </span>
-        </div>
-        <p class="upgrade-text">
-          <a href="">Upgrade to Unlimited Reviews</a>
-        </p>
+        <!--<div>-->
+          <!--<span class="new-review" ng-if="$ctrl.newReview === true">-->
+            <!--<a href="" ui-sref="app.basic_reviews">New review!  </a>-->
+          <!--</span>-->
+          <!--<span class="past-reviews">-->
+            <!--<a href="" ui-sref="app.basic_reviews">Past reviews</a>-->
+          <!--</span>-->
+        <!--</div>-->
+        <!--<p class="upgrade-text">-->
+          <!--<a href="">Upgrade to Unlimited Reviews</a>-->
+        <!--</p>-->
       </div>
     </div>
 
@@ -24,40 +24,15 @@
 
     <form ng-submit="$ctrl.submitForm()" name="$ctrl.videoForm" enctype="multipart/form-data">
       <div class="row" ng-if="$ctrl.showForm === true">
-        <!-- Main view - contains video uploads views -->
+        <!-- Main view - contains audio uploads -->
         <div class="col-md-5">
           <div class="upload">
             <div class="upload-title">
-              Upload video for review
+              Upload clip to catalog
             </div>
 
             <div class="row" >
-              <div class="cols col-md-4">
-                <div class="custom-controls-stacked">
-                  <label class="custom-control custom-radio">
-                    <input id="radioStacked1" name="radio-stacked" ng-model="$ctrl.formData.category" value="hitting" type="radio" class="custom-control-input">
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">Hitting</span>
-                  </label>
-                  <label class="custom-control custom-radio">
-                    <input id="radioStacked2" name="radio-stacked" ng-model="$ctrl.formData.category" value="pitching" type="radio" class="custom-control-input">
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">Pitching</span>
-                  </label>
-                  <label class="custom-control custom-radio">
-                    <input id="radioStacked3" name="radio-stacked" ng-model="$ctrl.formData.category" value="defense" type="radio" class="custom-control-input">
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">Defense</span>
-                  </label>
-                  <label class="custom-control custom-radio">
-                    <input id="radioStacked4" name="radio-stacked" ng-model="$ctrl.formData.category" value="throwing" type="radio" class="custom-control-input">
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">Throwing</span>
-                  </label>
-                </div>
-              </div>
-
-              <div class="cols col-md-8">
+              <div class="cols col-md-8" style="margin-top: 100px">
                 <div class="dropzone">
                   <div class="fallback">
                     <input
@@ -73,22 +48,14 @@
                             on-file-change="$ctrl.checkFiles"
                             multiple
                     />
-                    <p style="color: #2aabd2">You can select a maximum of 2 videos together for upload.</p>
-                    <p>Max: 50MB <span style="font-size: 12px">(.mp4, .3gp, .avi, .mov, .flv, .webm, .mpg, .mp2, .mpeg, .mpe, .mpv, .ogg, .m4p, .m4v)</span></p>
+                    <p style="color: #2aabd2">You can only upload .mp3 files.</p>
+                    <p>Max. Length: 30 seconds  <span style="font-size: 12px">(.mp3)</span></p>
                     <i ng-show="$ctrl.videoForm.file.$error.required">*required</i><br>
                     <i ng-show="$ctrl.videoForm.file.$error.maxSize">File too large
                       {{$ctrl.formData.video.size / 1000000|number:1}}MB: max 50MB</i>
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="upload-explain">
-              <p>
-                You can upload upto 2 videos for review. We
-                recommend face on and down-the-line from our
-                camera setup video in the pro setup section.
-              </p>
             </div>
 
             <div class="upload-success">
@@ -108,8 +75,8 @@
         <div class="col-md-2"></div>
 
         <div class="col-md-5">
-          <div class="notes-title">
-            Notes to Instructor
+          <div class="notes-title" style="margin-top: 100px">
+            Add notes
           </div>
 
           <div class="form-group">
@@ -120,7 +87,7 @@
 
         <div class="upload-button">
           <button class="btn primary-btn" type="submit">
-            SEND VIDEO
+            SEND AUDIO
           </button>
         </div>
         <!-- End the row & container divs -->
