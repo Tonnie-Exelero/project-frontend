@@ -2,51 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbe35d68-1861-4f21-8ab2-386982686a32" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/main/article/article-actions.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/main/article/article-actions.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/main/article/article.config.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/main/article/article.controller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/main/article/article.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/main/article/comment.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/main/article/comment.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/main/article/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/main/editor/editor.config.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/main/editor/editor.controller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/main/editor/editor.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/main/editor/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/main/master/archive/archive.config.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/main/master/archive/archive.controller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/main/master/archive/archive.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/main/master/archive/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/main/master/dashboard/dashboard.config.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/main/master/dashboard/dashboard.controller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/main/master/dashboard/dashboard.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/main/master/dashboard/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/main/master/edit/edit.config.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/main/master/edit/edit.controller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/main/master/edit/edit.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/main/master/edit/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/main/master/home/home.config.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/main/master/home/home.controller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/main/master/home/home.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/main/master/home/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/main/master/instructor/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/main/master/instructor/instructor.config.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/main/master/instructor/instructor.controller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/main/master/instructor/instructor.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/services/articles.service.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/services/comments.service.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/services/master_home.service.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/services/tags.service.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/app.js" afterPath="$PROJECT_DIR$/src/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/basic/home/home.controller.js" afterPath="$PROJECT_DIR$/src/js/main/basic/home/home.controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/basic/home/home.html" afterPath="$PROJECT_DIR$/src/js/main/basic/home/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/home/home.controller.js" afterPath="$PROJECT_DIR$/src/js/main/home/home.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/home/home.html" afterPath="$PROJECT_DIR$/src/js/main/home/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/services/index.js" afterPath="$PROJECT_DIR$/src/js/services/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -61,17 +18,17 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/main/basic/home/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="870">
-              <caret line="89" column="22" lean-forward="false" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="22" />
+            <state relative-caret-position="175">
+              <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="e#3311#4038#0" expanded="false" />
-                <marker date="1545774504308" expanded="false" signature="3612:3628" ph="..." />
-                <marker date="1545774504308" expanded="false" signature="3770:3803" ph="..." />
+                <element signature="e#2975#3702#0" expanded="false" />
+                <marker date="1545780871045" expanded="false" signature="3276:3292" ph="..." />
+                <marker date="1545780871045" expanded="false" signature="3434:3467" ph="..." />
               </folding>
             </state>
           </provider>
@@ -120,7 +77,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.controller.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/main/home/home.controller.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
@@ -268,13 +225,13 @@
         <option value="$PROJECT_DIR$/src/js/layout/footer.html" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/js/config/app.constants.js" />
-        <option value="$PROJECT_DIR$/src/js/main/basic/home/home.html" />
         <option value="$PROJECT_DIR$/src/js/main/basic/home/index.js" />
         <option value="$PROJECT_DIR$/src/js/main/basic/home/home.controller.js" />
         <option value="$PROJECT_DIR$/src/js/app.js" />
         <option value="$PROJECT_DIR$/src/js/services/index.js" />
         <option value="$PROJECT_DIR$/src/js/main/home/home.controller.js" />
         <option value="$PROJECT_DIR$/src/js/main/home/home.html" />
+        <option value="$PROJECT_DIR$/src/js/main/basic/home/home.html" />
       </list>
     </option>
   </component>
@@ -377,7 +334,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="basic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reviews" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -402,26 +389,8 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="basic" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -629,7 +598,7 @@
       <workItem from="1545251038776" duration="88000" />
       <workItem from="1545254751530" duration="992000" />
       <workItem from="1545322115076" duration="3528000" />
-      <workItem from="1545770767009" duration="8728000" />
+      <workItem from="1545770767009" duration="9228000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1518706219418</created>
@@ -642,7 +611,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="531975000" />
+    <option name="totallyTimeSpent" value="532475000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -664,7 +633,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32888147" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32594937" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32594937" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -828,20 +797,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/basic/home/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="89" column="22" lean-forward="false" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="22" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#3311#4038#0" expanded="false" />
-            <marker date="1545774504308" expanded="false" signature="3612:3628" ph="..." />
-            <marker date="1545774504308" expanded="false" signature="3770:3803" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
@@ -914,14 +869,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7174">
-          <caret line="42555" column="6" lean-forward="false" selection-start-line="42555" selection-start-column="6" selection-end-line="42555" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/mp3-cutter/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-265">
@@ -986,6 +933,28 @@
         <state relative-caret-position="204">
           <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="4640" column="13" lean-forward="false" selection-start-line="4640" selection-start-column="13" selection-end-line="4640" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/main/basic/home/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#2975#3702#0" expanded="false" />
+            <marker date="1545780871045" expanded="false" signature="3276:3292" ph="..." />
+            <marker date="1545780871045" expanded="false" signature="3434:3467" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
