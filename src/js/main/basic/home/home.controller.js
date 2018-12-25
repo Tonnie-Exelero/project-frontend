@@ -9,9 +9,18 @@ class BasicHomeCtrl {
         this.currentUser = User.current;
         this._Reviews = BasicReviews;
         this._Basic = BasicHome;
+        // this._MP3Cutter = MP3Cutter;
 
         this.formData = {};
         this.videoNames = [];
+
+        // MP3Cutter
+        /*this._MP3Cutter.cut({
+            src: '',
+            target: '',
+            start: 0,
+            end: 30
+        });*/
 
         this.fileInput = document.getElementsByTagName('input');
 
@@ -31,36 +40,36 @@ class BasicHomeCtrl {
             }
         };
 
-        this._Reviews.getBasicReviews().then(
-            (reviews) => {
-                if (reviews.length > 0) {
-                    for (let i=0; i<reviews.length; i++){
-                        if (reviews[i].reviewed === true && reviews[i].reviewChecked === false){
-                            this.newReview = true
-                        }
-
-                        reviews[i].gCount = (Date.parse(reviews[i].createdAt) >= this.fDay && Date.parse(reviews[i].createdAt) <= this.fthDay);
-                    }
-
-                    this.reviews = reviews;
-
-                    let counts = {};
-
-                    for (let j=0; j<reviews.length; j++){
-                        let num = reviews[j].gCount;
-                        counts[num] = counts[num] ? counts[num] + 1 : 1;
-                    }
-
-                    if(0 < counts[true] < 2){
-                        this.showForm = false;
-                    } else if (counts[true] === 0){
-                        this.showForm = true;
-                    }
-                } else {
-                    this.showForm = true;
-                }
-            }
-        );
+        // this._Reviews.getBasicReviews().then(
+        //     (reviews) => {
+        //         if (reviews.length > 0) {
+        //             for (let i=0; i<reviews.length; i++){
+        //                 if (reviews[i].reviewed === true && reviews[i].reviewChecked === false){
+        //                     this.newReview = true
+        //                 }
+        //
+        //                 reviews[i].gCount = (Date.parse(reviews[i].createdAt) >= this.fDay && Date.parse(reviews[i].createdAt) <= this.fthDay);
+        //             }
+        //
+        //             this.reviews = reviews;
+        //
+        //             let counts = {};
+        //
+        //             for (let j=0; j<reviews.length; j++){
+        //                 let num = reviews[j].gCount;
+        //                 counts[num] = counts[num] ? counts[num] + 1 : 1;
+        //             }
+        //
+        //             if(0 < counts[true] < 2){
+        //                 this.showForm = false;
+        //             } else if (counts[true] === 0){
+        //                 this.showForm = true;
+        //             }
+        //         } else {
+        //             this.showForm = true;
+        //         }
+        //     }
+        // );
 
         this.upload = function (videos) {
             let files = videos;

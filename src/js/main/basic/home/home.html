@@ -23,7 +23,7 @@
     <hr size="1" color="lightgrey">
 
     <form ng-submit="$ctrl.submitForm()" name="$ctrl.videoForm" enctype="multipart/form-data">
-      <div class="row" ng-if="$ctrl.showForm === true">
+      <div class="row">
         <!-- Main view - contains audio uploads -->
         <div class="col-md-5">
           <div class="upload">
@@ -94,7 +94,7 @@
       </div>
     </form>
 
-    <div class="row" ng-if="$ctrl.showForm === false">
+    <!--<div class="row" ng-if="$ctrl.showForm === false">
       <div class="cols col-md-4"></div>
       <div class="cols col-md-4 text-center">
         <div class="no-upload">
@@ -115,6 +115,6 @@
         </div>
       </div>
       <div class="cols col-md-4"></div>
-    </div>
+    </div>-->
   </div>
 </div>
