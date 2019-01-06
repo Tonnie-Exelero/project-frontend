@@ -38,14 +38,14 @@
                             name="file"
                             ngf-select
                             ngf-pattern="'**/*'"
-                            accept="**/*"
+                            accept=".mp3, .wma, .wv, .wav, .m4a, .raw, .msv, .mpc, .mmf, .m4p, m4b, .aac, .3gp"
                             files-input
                             ngf-max-size="50MB"
                             on-file-change="$ctrl.checkFiles"
                             multiple
                     />
-                    <p style="color: #2aabd2; margin-top: 20px">You can only upload .mp3 files.</p>
-                    <p>Max. Length: 30 seconds  <span style="font-size: 12px">(.mp3)</span></p>
+                    <p style="color: #2aabd2; margin-top: 20px">You can only upload <i>.mp3, .wma, .wv, .wav, .m4a, .raw, .msv, .mpc, .mmf, .m4p, m4b, .aac, .3gp</i> files.</p>
+                    <p>Max. Length: 30 seconds  <span style="font-size: 12px">(.mp3, .wma, .wv, .wav, .m4a, .raw, .msv, .mpc, .mmf, .m4p, m4b, .aac, .3gp)</span></p>
                     <i ng-show="$ctrl.videoForm.file.$error.required">*required</i><br>
                     <i ng-show="$ctrl.videoForm.file.$error.maxSize">File too large
                       {{$ctrl.formData.video.size / 1000000|number:1}}MB: max 50MB</i>
