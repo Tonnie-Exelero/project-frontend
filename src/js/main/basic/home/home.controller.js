@@ -9,6 +9,7 @@ class BasicHomeCtrl {
         this.currentUser = User.current;
         this._Reviews = BasicReviews;
         this._Basic = BasicHome;
+
         // this._MP3Cutter = MP3Cutter;
 
         this.formData = {};
@@ -80,7 +81,7 @@ class BasicHomeCtrl {
                     data: {file: files[i]} //pass files as data, should be user ng-model
                 }).then(function (resp) { //upload function returns a promise
                     if (resp.data.error_code === 0) { //validate success
-                        console.log('Video(s) uploaded successfully.');
+                        console.log('Clip(s) uploaded successfully.');
                     } else {
                         console.log('An error occurred');
                     }
@@ -115,15 +116,16 @@ class BasicHomeCtrl {
 
             this._Basic.add(this.formData).then(
                 (res) => {
-                    this.success = "Sent! Your videos have been uploaded and you will be notified via email when review is ready.";
-                    this.nextVideo = "Next upload will be available the 1st and 15th of every month.";
+                    this.success_upload = "Audio Clip(s) successfully uploaded.";
 
                     this.formData = {};
-                    $state.reload();
+                    // $state.reload();
                 },
                 (err) => {
                     this.isSubmitting = false;
                     this.errors = err.data.errors;
+
+                    this.error_upload = "There was an error while uploading. Please try again.";
                 }
             )
         }

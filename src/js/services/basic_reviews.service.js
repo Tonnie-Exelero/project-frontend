@@ -31,4 +31,11 @@ export default class BasicReviews {
             method: 'GET'
         }).then((res) => res.data.theVideo);
     }
+
+    download(file){
+        return this._$http({
+            url: this._AppConstants.api + '/basic/download?file=' + file,
+            method: 'GET'
+        }).then((res) => res.data);
+    }
 }
