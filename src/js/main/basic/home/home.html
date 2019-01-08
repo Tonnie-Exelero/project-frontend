@@ -8,7 +8,7 @@
       <div class="col-md-6 right-links">
         <div>
           <span class="reviews">
-            <a href="" ui-sref="app.basic_reviews">Review Catalog</a>
+            <a href="" ui-sref="app.home">Clips Catalog</a>
           </span>
         </div>
       </div>
@@ -38,13 +38,14 @@
                             name="file"
                             ngf-select
                             ngf-pattern="'**/*'"
-                            accept=".mp3, .wma, .wv, .wav, .m4a, .raw, .msv, .mpc, .mmf, .m4p, m4b, .aac, .3gp"
+                            accept=".mp3, .mpeg, .ogg, .wav"
                             files-input
                             ngf-max-size="50MB"
                             on-file-change="$ctrl.checkFiles"
                             multiple
+                            required
                     />
-                    <p style="color: #2aabd2; margin-top: 20px">You can only upload <i>.mp3, .wma, .wv, .wav, .m4a, .raw, .msv, .mpc, .mmf, .m4p, m4b, .aac, .3gp</i> files.</p>
+                    <p style="color: #2aabd2; margin-top: 20px">You can only upload <i>.mp3, .mpeg, .ogg, .wav</i> files.</p>
                     <p>Max. Length: 30 seconds  <span style="font-size: 12px"></span></p>
                     <i ng-show="$ctrl.videoForm.file.$error.required">*required</i><br>
                     <i ng-show="$ctrl.videoForm.file.$error.maxSize">File too large
@@ -83,7 +84,7 @@
 
           <div class="form-group">
             <label for="text-area"></label>
-            <textarea class="form-control" id="text-area" ng-model="$ctrl.formData.notes" rows="3" cols="5" placeholder="Tag1, Tag2, Tag3..."></textarea>
+            <textarea class="form-control" id="text-area" ng-model="$ctrl.formData.notes" rows="3" cols="5" placeholder="Tag1, Tag2, Tag3..." required></textarea>
           </div>
         </div>
 

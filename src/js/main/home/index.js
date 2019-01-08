@@ -1,7 +1,7 @@
 import angular from 'angular';
 
 // Create the module where our functionality can attach to
-let homeModule = angular.module('app.home', ['ngMaterial', 'ngMessages', 'ngAria', 'ngAnimate',]);
+let homeModule = angular.module('app.home', ['ngMaterial', 'ngMessages', 'ngAria', 'ngAnimate']);
 
 // Include our UI-Router config settings
 import HomeConfig from './home.config';

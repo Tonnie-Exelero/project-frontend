@@ -110,6 +110,7 @@ class BasicHomeCtrl {
                 video: this.videoNames,
                 notes: this.formData.notes,
                 name: this.currentUser.username,
+                clipName: this.videoNames,
                 type: "basic",
                 reviewed: false
             };

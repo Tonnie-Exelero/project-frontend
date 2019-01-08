@@ -25,11 +25,18 @@ export default class BasicReviews {
         }).then((res) => res.data.review);
     }
 
-    getSingleVideo(video) {
+    getSingleClip(clip) {
         return this._$http({
-            url: this._AppConstants.api + '/basic/getVideo?video=' + video,
+            url: this._AppConstants.api + '/basic/getClip?clip=' + clip,
             method: 'GET'
-        }).then((res) => res.data.theVideo);
+        }).then((res) => res.data.theClip);
+    }
+
+    getClipSearch(item) {
+        return this._$http({
+            url: this._AppConstants.api + '/basic/searchClip?search=' + item,
+            method: 'GET'
+        }).then((res) => res.data.searchResults);
     }
 
     download(file){

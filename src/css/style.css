@@ -406,7 +406,8 @@ input:checked ~ .tab-content {
 }
 
 .clip-name {
-    font-size: 15px;
+    font-size: 17px;
+    font-weight: 600;
     bottom: 0;
     padding: 10px;
     word-break : break-all;

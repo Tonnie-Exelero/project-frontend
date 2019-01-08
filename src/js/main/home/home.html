@@ -9,6 +9,18 @@
 
   <!-- Main view - contains tabs & article list -->
   <div class="container grids-list" flex ng-cloak>
+
+    <form ng-submit="$ctrl.submitSearch()" class="form-inline" enctype="multipart/form-data" style="margin-bottom: 30px">
+        <div class="form-group">
+          <label for="searchTerm"></label>
+          <input class="form-control" id="searchTerm" ng-model="$ctrl.formData.searchTerm" size="115" placeholder="Enter search term">
+        </div>
+
+          <button class="btn primary-btn" type="submit">
+            SEARCH
+          </button>
+    </form>
+
     <md-content layout-padding>
       <md-grid-list
               md-cols-gt-md="12" md-cols="3" md-cols-md="8"
@@ -23,8 +35,17 @@
                 md-rowspan-gt-sm="{{tile.rowspan}}">
 
             <div class="clip-name">
-              {{$ctrl.reviews[$index].video[0]}}
+              {{tile.nameClip}}
             </div>
+
+          <br />
+
+            <audio controls width="35px" height="13px">
+              <source src="http://cushiono.com/old/{{tile.nameClip}}" type="audio/mpeg">
+              <source src="http://cushiono.com/old/{{tile.nameClip}}" type="audio/wav">
+              <source src="http://cushiono.com/old/{{tile.nameClip}}" type="audio/ogg">
+              Your browser does not support the audio element.
+            </audio>
         </md-grid-tile>
       </md-grid-list>
     </md-content>
