@@ -1,7 +1,7 @@
 import angular from 'angular';
 
 // Create the module where our functionality can attach to
-let basicReviewsModule = angular.module('app.basic_reviews', []);
+let basicReviewsModule = angular.module('app.basic_reviews', ['ngMaterial']);
 
 // Include our UI-Router config settings
 import BasicReviewsConfig from './reviews.config';

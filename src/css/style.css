@@ -400,3 +400,15 @@ input:checked ~ .tab-content {
     border-left: inherit;
     border-radius: 0 0.25rem 0.25rem 0;
 }
+
+.grids-list {
+    margin-bottom: 100px;
+}
+
+.clip-name {
+    font-size: 15px;
+    bottom: 0;
+    padding: 10px;
+    word-break : break-all;
+    text-transform: capitalize;
+}

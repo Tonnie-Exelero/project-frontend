@@ -7,22 +7,28 @@
     </div>
   </div>
 
-  <div class="container page">
-    <div class="row">
+  <!-- Main view - contains tabs & article list -->
+  <div class="container grids-list" flex ng-cloak>
+    <md-content layout-padding>
+      <md-grid-list
+              md-cols-gt-md="12" md-cols="3" md-cols-md="8"
+              md-row-height-gt-md="1:1" md-row-height="4:3"
+              md-gutter-gt-md="16px" md-gutter-md="8px" md-gutter="4px">
+        <md-grid-tile
+                ng-repeat="tile in $ctrl.colorTiles"
+                ng-style="{
+            'background': tile.color
+          }"
+                md-colspan-gt-sm="{{tile.colspan}}"
+                md-rowspan-gt-sm="{{tile.rowspan}}">
 
-      <!-- Main view - contains tabs & article list -->
-      <div class="col-md-6 offset-md-3 col-xs-12">
-        <h3 class="text-xs-center" style="color: limegreen;">Welcome to your Audio Catalog</h3><br />
-        <h5 class="text-xs-center">For all your audio clips</h5>
-
-        <div class="text-xs-center" style="margin-top: 40px">
-          <a ui-sref-active="active" ui-sref="app.login">
-            <h3><u>Sign In</u></h3> or Create account
-          </a>
-        </div>
-      </div>
-      <!-- End the row & container divs -->
-    </div>
+            <div class="clip-name">
+              {{$ctrl.reviews[$index].video[0]}}
+            </div>
+        </md-grid-tile>
+      </md-grid-list>
+    </md-content>
   </div>
+  <!-- End the row & container divs -->
 
 </div>
