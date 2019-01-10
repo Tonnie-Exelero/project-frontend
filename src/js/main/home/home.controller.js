@@ -98,7 +98,6 @@ class HomeCtrl {
         this._$scope.$broadcast('setListTo', newList);
     }
 
-
 }
 
 export default HomeCtrl;

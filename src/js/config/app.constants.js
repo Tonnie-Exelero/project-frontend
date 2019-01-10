@@ -1,5 +1,5 @@
 const AppConstants = {
-    // api: 'https://d40c0507.ngrok.io/api',
+    // api: 'http://fc8c9908.ngrok.io/api',
     api: 'http://localhost:8080/api',
     jwtKey: 'jwtToken',
     appName: 'Audio Catalog',

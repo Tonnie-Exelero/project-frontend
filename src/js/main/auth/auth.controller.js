@@ -21,21 +21,12 @@ class AuthCtrl {
 
     this._User.attemptAuth(this.authType, this.formData).then(
       (res) => {
-        if (res.data.user.role === "Basic_User"){
-            this._$state.go('app.basic_home');
-        } else if (res.data.user.role === "Unlimited_User"){
-            this._$state.go('app.unlimited_home');
-        } else if (res.data.user.role === "Master_User"){
-            this._$state.go('app.master_home');
-        } else if (res.data.user.role === "All_Instructor_User"){
-            this._$state.go('app.instructor_home');
-        } else if (res.data.user.role === "Unlimited_Instructor_User"){
-            this._$state.go('app.unlimited_instructor_home');
-        }
+          this._$state.go('app.basic_home');
       },
       (err) => {
         this.isSubmitting = false;
         this.anError = "The Email or Password was incorrect.";
+        console.log(err.data.errors);
         // this.errors = err.data.errors;
       }
     )

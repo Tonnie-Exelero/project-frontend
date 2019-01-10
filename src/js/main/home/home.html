@@ -40,10 +40,16 @@
 
           <br />
 
-            <audio controls width="35px" height="13px">
-              <source src="http://cushiono.com/old/{{tile.nameClip}}" type="audio/mpeg">
-              <source src="http://cushiono.com/old/{{tile.nameClip}}" type="audio/wav">
-              <source src="http://cushiono.com/old/{{tile.nameClip}}" type="audio/ogg">
+            <audio controls id="player" ontimeupdate="
+if (currentTime > 30){
+    pause();
+    currentTime = 0;
+}
+">
+              <source src="http://ac380143.ngrok.io/uploads/{{tile.nameClip}}" type="audio/mpeg">
+              <source src="http://ac380143.ngrok.io/uploads/{{tile.nameClip}}" type="audio/ogg">
+              <source src="http://ac380143.ngrok.io/uploads/{{tile.nameClip}}" type="audio/wav">
+
               Your browser does not support the audio element.
             </audio>
         </md-grid-tile>
